@@ -1,0 +1,138 @@
+<section id="contact" class="contact ptb-100">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <!-- Title Of Section Center -->
+        <div class="section-title text-center">
+          <h2>Get In Touch</h2>
+          <h3>Contact <span>Me</span></h3>
+        </div>
+      </div>
+      <div class="offset-lg-1 col-lg-10 mb-20">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="contact-item">
+              <div class="inner-contact">
+                <span><i class="fa fa-location-arrow"></i></span>
+                <h6>Address</h6>
+              </div>
+              <div class="info-cont">
+                <p>HN - Francisco Morazan, Tegucigalpa</p>
+              </div>
+              <div class="bg-icon"><i class="fa fa-location-arrow"></i></div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-item">
+              <div class="inner-contact">
+                <span><i class="fa fa-envelope"></i></span>
+                <h6>Email</h6>
+              </div>
+
+              <div class="info-cont">
+                <p><a href="mailto:cturcioscolindres01@gmail.com">cturcioscolindres01@gmail.com</a></p>
+              </div>
+              <div class="bg-icon"><i class="fa fa-envelope"></i></div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-item">
+              <div class="inner-contact">
+                <span><i class="fa fa-phone"></i></span>
+                <h6>Call Me</h6>
+              </div>
+              <div class="info-cont">
+                <p><a href="tel:+504 9733540">+504 97335408</a></p>
+              </div>
+              <div class="bg-icon"><i class="fa fa-phone"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="offset-lg-1 col-lg-10">
+        <form class="form" [formGroup]="contactForm" action="" (ngSubmit)="onSubmit()">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <input
+                  type="text"
+                  placeholder="Name"
+                  name="name" 
+                  formControlName="name"
+                  [ngClass]="{'input--error': form.name.errors && (form.name.dirty || form.name.touched || submitted)}"
+                >
+                <span 
+                  class="error-text"
+                  *ngIf="form.name.errors && (form.name.dirty || form.name.touched || submitted)"
+                >
+                  Campo requerido
+                </span>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="form-group">
+                <input
+                  type="Email" 
+                  placeholder="John.Doe@company.com"
+                  name="email"
+                  formControlName="email"
+                  [ngClass]="{'input--error': form.email.errors && (form.email.dirty || form.email.touched || submitted)}">
+                <span class="error-text"
+                  *ngIf="form.email.errors && (form.email.dirty || form.email.touched || submitted)"
+                >
+                  Campo requerido
+                </span>
+              </div>
+            </div>
+
+            <div class="col-md-12">
+              <div class="form-group">
+                <input
+                  type="text"
+                  placeholder="Subject"
+                  name="subject"
+                  formControlName="subject"
+                  [ngClass]="{'input--error': form.subject.errors && (form.subject.dirty || form.subject.touched || submitted)}"
+                >
+                <span
+                  class="error-text"
+                  *ngIf="form.subject.errors && (form.subject.dirty || form.subject.touched || submitted)"
+                >
+                  Campo requerido
+                </span>
+              </div>
+            </div>
+
+            <div class="col-md-12">
+              <div class="form-group">
+                <textarea
+                  placeholder="Your Message Here"
+                  name="description"
+                  formControlName="description"
+                  [ngClass]="{'input--error': form.description.errors && (form.description.dirty || form.description.touched || submitted)}"></textarea>
+                <span
+                  class="error-text"
+                  *ngIf="form.description.errors && (form.description.dirty || form.description.touched || submitted)"
+                >
+                  Campo requerido</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Button Send Message  -->
+          <button class="btn-one" type="submit">
+            <i class="fas fa-paper-plane"></i>
+            <span>Send Message</span>
+          </button>
+           <div class="form__message form__message--sucess" *ngIf="success">Mensaje enviado exitosamente</div>
+           <div class="form__message form__message--error" *ngIf="!success && submitted">Error al enviar el mensaje!</div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

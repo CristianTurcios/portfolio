@@ -1,0 +1,24 @@
+<section id="service" class="services pt-100 pb-70">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <div class="section-title text-center">
+          <h2>What Love I Do</h2>
+          <h3><span>My</span> Services</h3>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" *ngFor="let service of services; index as i">
+        <div class="services-item">
+          <div class="icon-services">
+            <span><i [ngClass]="service.icon"></i></span>
+          </div>
+          <h4>{{service.title}} </h4>
+          <hr>
+          <p>{{service.description}} </p>
+          <span class="number-bg">0{{i + 1 }} </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
