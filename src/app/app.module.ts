@@ -21,7 +21,6 @@ import { FooterComponent } from './footer/footer.component';
 import { CertificationsComponent } from './certifications/certifications.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-
 @NgModule({
   declarations: [
     AppComponent,

@@ -9,17 +9,6 @@ $(document).ready(function () {
         scrollUp = $(".scroll-up");
     
 
-    
-    
-    /*========== Start Navbar Auto Change  ==========*/
-    win.on('scroll', function () {
-        if (win.scrollTop() > 50) {
-            navbar.addClass('nav-fixed').removeClass('fixed-top');
-        } else {
-            navbar.addClass('fixed-top').removeClass('nav-fixed');
-        }
-    });
-
     /*========== Start Scroll For Navigation Menu ==========*/
     navbar.on('click', 'a', function (e) {
         e.preventDefault();
@@ -45,11 +34,11 @@ $(document).ready(function () {
         offset: 82
     });
     //// COLLAPSED MENU CLOSE ON CLICK
-    navbar.on('click', '.navbar-collapse', function (e) {
-        if ($(e.target).is('a')) {
-            $(this).collapse('hide');
-        }
-    });
+    // navbar.on('click', '.navbar-collapse', function (e) {
+    //     if ($(e.target).is('a')) {
+    //         $(this).collapse('hide');
+    //     }
+    // });
 
     /*========== Start Counter To Js Statistics   ==========*/
     win.on('scroll.statistics', function () {
@@ -65,9 +54,9 @@ $(document).ready(function () {
     $("#control li").on('click', function () {
         $(this).addClass('active').siblings().removeClass('active');
     });
-    // The Filterizr
+    // // The Filterizr
     $('#filtr-container').filterizr({
-        animationDuration: 0.4
+        animationDuration: 0.2
     });
 
     /*========== Start Magnigic Popup Js ==========*/
@@ -78,54 +67,6 @@ $(document).ready(function () {
             enabled: true
         }
     });
-
-    
-    
-    
-    
-    /*========== Start OWL Carousel Js testimonial   ==========*/
-    $('.testimonial').owlCarousel({
-        loop: true,
-        items: 2,
-        margin: 50,
-        nav: true,
-        navText: ["<i class='fas fa-angle-left'></i>", "<i class='fas fa-angle-right'></i>"],
-        responsive: {
-			0: {
-				items: 1
-			},
-			600: {
-				items: 1
-			},
-			700: {
-				items: 1
-			},
-			1000: {
-				items: 2
-			}
-		}
-    });
-    
-     /*========== Start OWL Carousel Js sponsor   ==========*/
-    $('.sponsor').owlCarousel({
-        loop: true,
-        margin: 30,
-        smartSpeed: 1000,
-        autoplay: 2000,
-        responsive: {
-            0: {
-                items: 2
-            },
-            768: {
-                items: 3
-            },
-            1200: {
-                items: 5
-            }
-        }
-    });
-    
-    
     
     function animateProgressBar() {
         $('.skill-box .progress-line > span').each(function () {
@@ -146,10 +87,6 @@ $(document).ready(function () {
         animateProgressBar();
     }
     
-    
-    
-
-
     /*========== Start Scroll Up    ==========*/
     // Show And Hide Buttom Back To Top
     win.on('scroll', function () {
@@ -163,7 +100,4 @@ $(document).ready(function () {
     scrollUp.on('click', function () {
         $("html, body").animate({ scrollTop: 0}, 1000);
     });
-  
-
-
 });

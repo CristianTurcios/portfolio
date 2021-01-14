@@ -9,25 +9,21 @@
           </div>
         </div>
 
-        <!--Testimonials Item -->
-        <!-- <owl-carousel-o [options]="customOptions" class="owl-carousel sponsor owl-loaded" #owlCustomerCarousel>
+        <!--Certifications and Courses Item -->
+        <owl-carousel-o [options]="customOptions" class="owl-carousel sponsor owl-loaded" #owlCustomerCarousel>
           <ng-container *ngFor="let slide of certifications">
             <ng-template carouselSlide>
               <div class="owl-item">
                 <div class="sponsor-item">
-                  <img [src]="slide.image" alt="SAFe Product Owner">
+                  <a [href]="slide.link"
+                    target="_blank" rel="noopener noreferrer">
+                    <img [src]="slide.image" alt="SAFe Product Owner">
+                  </a>
                 </div>
               </div>
             </ng-template>
           </ng-container>
-        </owl-carousel-o> -->
-        <div class="owl-carousel sponsor  owl-loaded">
-            <div class="owl-item" *ngFor="let slide of certifications">
-              <div class="sponsor-item">
-                <img [src]="slide.image" alt="SAFe Product Owner">
-              </div>
-            </div>
-        </div>
+        </owl-carousel-o>
       </div>
     </div>
   </div>

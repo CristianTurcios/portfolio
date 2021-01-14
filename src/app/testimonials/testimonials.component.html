@@ -4,7 +4,6 @@
     <div class="row">
 
       <div class="col-md-8 offset-md-2">
-        <!-- Title Of Section Center -->
         <div class="section-title text-center">
           <h2>My Clients</h2>
           <h3><span>Happy</span> Clients</h3>
@@ -12,109 +11,32 @@
       </div>
 
       <div class="col-12">
-        <!--Testimonials Item -->
-        <div class="owl-carousel testimonial">
-          <!-- New Item -->
-          <div class="testmonail-item">
-            <div class="owl-item">
-              <div class="testmonail-box">
-                <div class="quote-icon">
-                  <i class="fas fa-quote-left fa-2x"></i>
+        <owl-carousel-o [options]="customOptions" class="testimonial" #owlTestimonialsCarousel>
+            <ng-container *ngFor="let testimonial of testimonials">
+              <ng-template carouselSlide>
+                <div class="testmonail-item">
+                  <div class="owl-item">
+                    <div class="testmonail-box">
+                      <div class="quote-icon">
+                        <i class="fas fa-quote-left fa-2x"></i>
+                      </div>
+                      <div class="client-img">
+                        <img [src]="testimonial.image" alt="Client">
+                      </div>
+                      <div class="author-details">
+                        <h6>{{testimonial.name}}</h6>
+                        <span>{{testimonial.jobTitle}}</span>
+                      </div>
+                      <div class="clearfix"></div>
+                      <div class="inner-test">
+                        <p class="text">{{testimonial.description}}</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <!-- Testmonail Image -->
-                <div class="client-img">
-                  <img src="http://placehold.it/100x100" alt="Client">
-                </div>
-                <div class="author-details">
-                  <h6> Nour Eldin </h6>
-                  <span>SEO Manager</span>
-                </div>
-                <div class="clearfix"></div>
-
-                <div class="inner-test">
-                  <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor
-                    incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing
-                    elit.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- New Item -->
-          <div class="testmonail-item">
-            <div class="owl-item">
-              <div class="testmonail-box">
-                <div class="quote-icon">
-                  <i class="fas fa-quote-left fa-2x"></i>
-                </div>
-                <!-- Testmonail Image -->
-                <div class="client-img">
-                  <img src="http://placehold.it/100x100" alt="Client">
-                </div>
-                <div class="author-details">
-                  <h6> Emy Jacman </h6>
-                  <span>Desktop Developer</span>
-                </div>
-                <div class="clearfix"></div>
-                <div class="inner-test">
-                  <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor
-                    incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing
-                    elit.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- New Item -->
-          <div class="testmonail-item">
-            <div class="owl-item">
-              <div class="testmonail-box">
-                <div class="quote-icon">
-                  <i class="fas fa-quote-left fa-2x"></i>
-                </div>
-                <!-- Testmonail Image -->
-                <div class="client-img">
-                  <img src="http://placehold.it/100x100" alt="Client">
-                </div>
-                <div class="author-details">
-                  <h6> Rabie Elkheir </h6>
-                  <span>UI/UX Designer </span>
-                </div>
-                <div class="clearfix"></div>
-
-                <div class="inner-test">
-                  <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor
-                    incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing
-                    elit.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- New Item -->
-          <div class="testmonail-item">
-            <div class="owl-item">
-              <div class="testmonail-box">
-                <div class="quote-icon">
-                  <i class="fas fa-quote-left fa-2x"></i>
-                </div>
-                <!-- Testmonail Image -->
-                <div class="client-img">
-                  <img src="http://placehold.it/100x100" alt="Client">
-                </div>
-                <div class="author-details">
-                  <h6> Sara Wander </h6>
-                  <span>Front End</span>
-                </div>
-                <div class="clearfix"></div>
-
-                <div class="inner-test">
-                  <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor
-                    incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing
-                    elit.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+              </ng-template>
+            </ng-container>
+          </owl-carousel-o>
       </div>
     </div>
   </div>
