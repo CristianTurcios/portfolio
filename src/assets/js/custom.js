@@ -33,12 +33,13 @@ $(document).ready(function () {
         target: '#navtoggler',
         offset: 82
     });
+
     //// COLLAPSED MENU CLOSE ON CLICK
-    // navbar.on('click', '.navbar-collapse', function (e) {
-    //     if ($(e.target).is('a')) {
-    //         $(this).collapse('hide');
-    //     }
-    // });
+    navbar.on('click', '.navbar-collapse', function (e) {
+        if ($(e.target).is('a')) {
+            $(this).collapse('hide');
+        }
+    });
 
     /*========== Start Counter To Js Statistics   ==========*/
     win.on('scroll.statistics', function () {
@@ -48,44 +49,6 @@ $(document).ready(function () {
             win.off('scroll.statistics');
         }
     });
-    
-    
-    /*========== Start Portfolio Trigger Filterizr Js ==========*/
-    $("#control li").on('click', function () {
-        $(this).addClass('active').siblings().removeClass('active');
-    });
-    // // The Filterizr
-    $('#filtr-container').filterizr({
-        animationDuration: 0.2
-    });
-
-    /*========== Start Magnigic Popup Js ==========*/
-    $('.my-work').magnificPopup({
-        delegate: 'a',
-        type: 'image',
-        gallery: {
-            enabled: true
-        }
-    });
-    
-    function animateProgressBar() {
-        $('.skill-box .progress-line > span').each(function () {
-            var percent = $(this).data('percent');
-            $(this).css({
-                width: percent + '%',
-                transition: 'width 1.5s linear'
-            });
-        });
-    }
-
-    $(window).on('scroll', function () {
-        if ($(window).scrollTop() > $('.about').offset().top + 200) {
-            animateProgressBar();
-        }
-    });
-    if ($(window).scrollTop() > $('.about').offset().top + 200) {
-        animateProgressBar();
-    }
     
     /*========== Start Scroll Up    ==========*/
     // Show And Hide Buttom Back To Top

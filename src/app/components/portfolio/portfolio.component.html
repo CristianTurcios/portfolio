@@ -1,0 +1,44 @@
+<section id="portfolio" class="portfolio pt-100 pb-70">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <div class="section-title text-center">
+          <h2>Let's See My Work</h2>
+          <h3><span>My</span> Portfolio</h3>
+        </div>
+        <div class="filter-group">
+          <ul id="control" class="list-control">
+            <li [ngClass]="{active: filterBy === 'all'}" (click)="changeFilter('all')">All</li>
+            <li [ngClass]="{active: filterBy === 'web'}" (click)="changeFilter('web')">Web Development</li>
+            <li [ngClass]="{active: filterBy === 'mobile'}" (click)="changeFilter('mobile')">Mobile Development</li>
+            <li [ngClass]="{active: filterBy === 'chatbot'}" (click)="changeFilter('chatbot')">Chatbot Development</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <ng-container *ngFor="let image of (visibleImages | imageFilter:filterBy); let index=index">
+        <div class="col-md-6 col-lg-4 filtr-item" >
+          <div class="my-work">
+            <div class="image">
+              <img class="img-fliud" [src]="image.image" alt="my-work">
+            </div>
+            <a class="overlay" >
+              <span class="icon-img" (click)="setProject(index)"><i class="fas fa-image"></i></span>
+              <div class="info-img">
+                <span class="info-title" (click)="setProject(index)">{{image.title}}</span>
+                <a href="https://nour-theme.netlify.app/dark-theme.html" target="_blank" rel="noopener noreferrer">
+                  <h5>Live Version</h5>
+                </a>
+              </div>
+              <span class="badge rounded-pill bg-warning text-dark" *ngFor="let tag of image.tags">{{tag}} </span>
+            </a>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</section>
+
+<ng-image-fullscreen-view [images]="projects[currentProject].images" [show]="showFlag" (close)="closeEventHandler()">
+</ng-image-fullscreen-view>
