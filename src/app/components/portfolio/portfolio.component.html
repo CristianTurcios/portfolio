@@ -12,6 +12,8 @@
             <li [ngClass]="{active: filterBy === 'web'}" (click)="changeFilter('web')">Web Development</li>
             <li [ngClass]="{active: filterBy === 'mobile'}" (click)="changeFilter('mobile')">Mobile Development</li>
             <li [ngClass]="{active: filterBy === 'chatbot'}" (click)="changeFilter('chatbot')">Chatbot Development</li>
+            <li [ngClass]="{active: filterBy === 'bi'}" (click)="changeFilter('bi')">Business Analisys</li>
+
           </ul>
         </div>
       </div>
@@ -27,11 +29,10 @@
               <span class="icon-img" (click)="setProject(index)"><i class="fas fa-image"></i></span>
               <div class="info-img">
                 <span class="info-title" (click)="setProject(index)">{{image.title}}</span>
-                <a href="https://nour-theme.netlify.app/dark-theme.html" target="_blank" rel="noopener noreferrer">
-                  <h5>Live Version</h5>
-                </a>
+                <a href="javascript:;" (click)="setProject(index)"><h5>• Gallery</h5></a>
+                <a [href]="image.link" target="_blank" rel="noopener noreferrer"><h5>• Live Version</h5></a>
               </div>
-              <span class="badge rounded-pill bg-warning text-dark" *ngFor="let tag of image.tags">{{tag}} </span>
+              <span class="badge rounded-pill bg-warning text-dark" *ngFor="let tag of image.tags">{{tag}}</span>
             </a>
           </div>
         </div>

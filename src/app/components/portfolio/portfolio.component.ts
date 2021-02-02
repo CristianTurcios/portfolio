@@ -11,46 +11,57 @@ export class PortfolioComponent implements OnInit {
   currentProject: number;
   visibleImages: any[] = [{
     image: 'http://placehold.it/601x601',
-    title: 'OneCampus',
+    title: 'OneCampus by Laureate',
     description: 'Web Development',
     category: 'web',
     project: 'onecampus',
+    link: 'https://onecampus.laureate.net/',
     tags: ['Angular', 'Python', 'NodeJS', 'Firebase', 'Firestore', 'Flask', 'GCP']
   },
   {
     image: 'http://placehold.it/602x602',
-    title: 'Mobile Creative Design',
-    tags: [],
-    category: 'mobile',
-    project: 'onefaculty'
-  },
-  {
-    image: 'http://placehold.it/600x600',
-    title: 'Chatbot Creative Design',
-    tags: [],
-    category: 'chatbot',
-    project: 'walden'
-  },
-  {
-    image: 'http://placehold.it/600x600',
-    title: 'OneFaculty',
-    tags: [],
+    title: 'OneFaculty by Laureate',
+    description: 'Web Development',
     category: 'web',
-    project: 'learner'
+    project: 'onefaculty',
+    link: 'https://onefaculty.laureate.net/',
+    tags: ['Angular', 'Python', 'NodeJS', 'Firebase', 'Firestore', 'Flask', 'GCP']
   },
   {
-    image: 'http://placehold.it/600x600',
-    title: 'Mobile Creative Design',
-    tags: [],
+    image: 'http://placehold.it/602x602',
+    title: 'Walden University Portal',
+    description: 'Web Development',
+    category: 'web',
+    project: 'walden',
+    link: 'https://www.waldenu.edu/',
+    tags: ['React', 'NodeJS', 'Express', 'GraphQL', 'cosmosDB', 'Microsoft Azure']
+  },
+  {
+    image: 'http://placehold.it/602x602',
+    title: 'Sumadi - Management Site',
+    description: 'Web Development',
+    category: 'web',
+    project: 'managementSite',
+    link: 'https://www.waldenu.edu/',
+    tags: ['React', 'NodeJS', 'NestJS', 'GraphQL', 'MongoDB', 'Docker', 'AWS']
+  },
+  {
+    image: 'http://placehold.it/602x602',
+    title: 'Cofinter App',
+    description: 'Mobile Development',
     category: 'mobile',
-    project: 'innovation'
+    project: 'cofinter',
+    link: '',
+    tags: ['Angular', 'NativeScript', 'REST API', 'SQLServer', 'PHP']
   },
   {
-    image: 'http://placehold.it/600x600',
-    title: 'Chatbot Creative Design',
-    tags: [],
+    image: 'http://placehold.it/602x602',
+    title: 'Charlotte Chatbot',
+    description: 'Chatbot Development',
     category: 'chatbot',
-    project: 'cofinter'
+    project: 'charlotte',
+    link: '',
+    tags: ['Avaamo', 'JavaScript', 'REST API', 'cosmosDB']
   }];
 
   projects: Array<any> = [
