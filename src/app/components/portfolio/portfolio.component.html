@@ -13,30 +13,40 @@
             <li [ngClass]="{active: filterBy === 'mobile'}" (click)="changeFilter('mobile')">Mobile Development</li>
             <li [ngClass]="{active: filterBy === 'chatbot'}" (click)="changeFilter('chatbot')">Chatbot Development</li>
             <li [ngClass]="{active: filterBy === 'bi'}" (click)="changeFilter('bi')">Business Analisys</li>
-
           </ul>
         </div>
       </div>
     </div>
     <div class="row">
-      <ng-container *ngFor="let image of (visibleImages | imageFilter:filterBy); let index=index">
-        <div class="col-md-6 col-lg-4 filtr-item" >
+      <ng-container *ngFor="let image of (filteredProjects | imageFilter:filterBy); let index=index">
+        <div class="col-md-6 col-lg-4 filtr-item">
           <div class="my-work">
             <div class="image">
-              <img class="img-fliud" [src]="image.image" alt="my-work">
+              <img class="img-fluid" [src]="image.image" alt="my-work">
             </div>
-            <a class="overlay" >
+            <a class="overlay">
               <span class="icon-img" (click)="setProject(index)"><i class="fas fa-image"></i></span>
               <div class="info-img">
                 <span class="info-title" (click)="setProject(index)">{{image.title}}</span>
-                <a href="javascript:;" (click)="setProject(index)"><h5>• Gallery</h5></a>
-                <a [href]="image.link" target="_blank" rel="noopener noreferrer"><h5>• Live Version</h5></a>
+                <a href="javascript:;" (click)="setProject(index)">
+                  <h5>• Gallery</h5>
+                </a>
+                <a [href]="image.link" target="_blank" rel="noopener noreferrer">
+                  <h5>• Live Version</h5>
+                </a>
               </div>
               <span class="badge rounded-pill bg-warning text-dark" *ngFor="let tag of image.tags">{{tag}}</span>
             </a>
           </div>
         </div>
       </ng-container>
+    </div>
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <div class="section-title text-center">
+          <button class="btn-one" (click)="nextResults()" *ngIf="showButton">Load More</button>
+        </div>
+      </div>
     </div>
   </div>
 </section>

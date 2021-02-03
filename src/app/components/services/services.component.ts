@@ -47,5 +47,4 @@ export class ServicesComponent implements OnInit {
       icon: 'icon icon-basic-laptop'
     }];
   }
-
 }
