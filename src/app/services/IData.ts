@@ -8,3 +8,8 @@ export interface IVisibleProjects {
     tags: Array<string>;
 }
 
+export interface IService {
+    title: string;
+    description: string;
+    icon: string;
+}

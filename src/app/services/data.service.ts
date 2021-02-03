@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { IVisibleProjects } from './IData';
+import { IService, IVisibleProjects } from './IData';
 
 @Injectable({
   providedIn: 'root'
@@ -7,6 +7,39 @@ import { IVisibleProjects } from './IData';
 export class DataService {
 
   constructor() { }
+
+  getServicesData(): Array<IService> {
+    return [{
+      title: 'Web Development',
+      description: 'I have solid experience in developing robust, scalable and adaptable web applications to help you achieve your business goals and reach many more potential clients for your business.',
+      icon: 'icon icon-basic-laptop'
+    },
+    {
+      title: 'App Development',
+      description: 'I will help you create and transform your idea or product into something tangible seamlessly on any device and get the best of mobile technology for your business.',
+      icon: 'icon icon-basic-smartphone'
+    },
+    {
+      title: 'Chatbot Development',
+      description: 'Reduce the waiting time of your users, answer their most common questions and improve their satisfaction with the implementation of a fully customized AI chatbot for your business.',
+      icon: 'icon icon-basic-message'
+    },
+    {
+      title: 'Product Owner',
+      description: 'I am a SAFe certified Product Owner and Product Manager with extensive experience in agile methodologies and I will help you maximize the value of the product developed by the Development Team.',
+      icon: 'icon icon-basic-lightbulb'
+    },
+    {
+      title: 'Business analytics',
+      description: 'Do you want to know more information about your business? Through analytical tools I can help you in making decisions within your company and thus help you maximize the return on investment you are obtaining.',
+      icon: 'icon icon-basic-globe'
+    },
+    {
+      title: 'Clean Code',
+      description: 'I have many years of experience working on many products together with large development teams, so with my work you will obtain a quality code and always following the highest standards in the market.',
+      icon: 'icon icon-basic-laptop'
+    }];
+  }
 
   getVisibleImages(): Array<IVisibleProjects> {
     return [{
