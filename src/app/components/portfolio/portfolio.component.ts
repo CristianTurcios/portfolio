@@ -9,22 +9,23 @@ import { IVisibleProjects } from 'src/app/services/IData';
 })
 export class PortfolioComponent implements OnInit {
   filterBy = 'all';
-  showFlag: boolean;
-  currentProject: number;
+  showFlag = false;
+  currentProject = -1;
   visibleImages: Array<IVisibleProjects> = [];
-  projects: any = [];
+  projects: Array<any> = [];
 
+  imageIndex = 0;
   limit = 6;
   total!: number;
   offset!: number;
-  splitArray: any;
+  splitArray: Array<any> = [];
   showButton!: boolean;
   filteredProjects!: Array<IVisibleProjects>;
 
 
-  constructor(private dataService: DataService) {
-    this.showFlag = false;
-    this.currentProject = 0;
+  constructor(
+    private dataService: DataService
+  ) {
   }
 
   ngOnInit(): void {
@@ -33,8 +34,9 @@ export class PortfolioComponent implements OnInit {
     this.filterProjects();
   }
 
-  setProject(projectIndex: number): void {
-    this.currentProject = projectIndex;
+  setProject(project: string): void {
+    this.currentProject = this.projects.findIndex((element: any) => element.project === project);
+    this.imageIndex = 0;
     this.showFlag = true;
   }
 
@@ -65,8 +67,6 @@ export class PortfolioComponent implements OnInit {
     this.total = this.splitArray.length - 1;
     this.filteredProjects = this.splitArray[0];
     this.offset = 1;
-
-    console.log(this.filteredProjects);
   }
 
   nextResults(): void {
@@ -81,5 +81,6 @@ export class PortfolioComponent implements OnInit {
 
   closeEventHandler(): void {
     this.showFlag = false;
+    this.currentProject = -1;
   }
 }

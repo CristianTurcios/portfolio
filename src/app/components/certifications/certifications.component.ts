@@ -69,7 +69,7 @@ export class CertificationsComponent implements OnInit {
     {
       title: 'Udemy NodeJS Course',
       image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-d6486.appspot.com/o/certifications%2Fnode-js.png?alt=media&token=5dd01448-5a17-4911-a67c-57e66e9aa915',
-      link: '',
+      link: 'https://www.udemy.com/certificate/UC-e3d50214-4c40-401f-a30c-611c4484709a/',
     },
     {
       title: 'Udemy PowerBI Course',

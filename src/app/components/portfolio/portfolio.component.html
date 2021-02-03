@@ -25,10 +25,10 @@
               <img class="img-fluid" [src]="image.image" alt="my-work">
             </div>
             <a class="overlay">
-              <span class="icon-img" (click)="setProject(index)"><i class="fas fa-image"></i></span>
+              <span class="icon-img" (click)="setProject(image.project)"><i class="fas fa-image"></i></span>
               <div class="info-img">
-                <span class="info-title" (click)="setProject(index)">{{image.title}}</span>
-                <a href="javascript:;" (click)="setProject(index)">
+                <span class="info-title" (click)="setProject(image.project)">{{image.title}}</span>
+                <a href="javascript:;" (click)="setProject(image.project)">
                   <h5>• Gallery</h5>
                 </a>
                 <a [href]="image.link" target="_blank" rel="noopener noreferrer">
@@ -51,5 +51,11 @@
   </div>
 </section>
 
-<ng-image-fullscreen-view [images]="projects[currentProject].images" [show]="showFlag" (close)="closeEventHandler()">
+<ng-image-fullscreen-view
+  *ngIf="showFlag"
+  [images]="projects[currentProject].images"
+  [show]="showFlag"
+  [paginationShow]="true"
+  (close)="closeEventHandler()"
+>
 </ng-image-fullscreen-view>

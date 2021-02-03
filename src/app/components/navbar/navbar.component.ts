@@ -9,15 +9,12 @@ import { Component, OnInit, AfterContentInit, Inject } from '@angular/core';
 export class NavbarComponent implements OnInit, AfterContentInit {
 
   constructor() { }
-  // constructor(@Inject(DOCUMENT) document: any) {
-  // }
 
   ngOnInit(): void {
   }
 
-  goToSection(section: string): void {
-    const sectionId = document.getElementById(section) ;
-    sectionId?.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'start' });
+  goToUrl(url: string): void {
+    window.open(url, '_blank');
   }
 
 

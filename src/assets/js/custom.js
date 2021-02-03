@@ -12,7 +12,7 @@ $(document).ready(function () {
     /*========== Start Scroll For Navigation Menu ==========*/
     navbar.on('click', 'a', function (e) {
         e.preventDefault();
-        var $anchor = $(this);
+        const $anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top - 82
         }, 1000);
@@ -42,13 +42,13 @@ $(document).ready(function () {
     });
 
     /*========== Start Counter To Js Statistics   ==========*/
-    win.on('scroll.statistics', function () {
-        var stat = $('.statistics');
-        if ($(this).scrollTop() >= stat.offset().top - win.height() + 220) {
-            $('.count').countTo();
-            win.off('scroll.statistics');
-        }
-    });
+    // win.on('scroll.statistics', function () {
+    //     var stat = $('.statistics');
+    //     if ($(this).scrollTop() >= stat.offset().top - win.height() + 220) {
+    //         $('.count').countTo();
+    //         win.off('scroll.statistics');
+    //     }
+    // });
     
     /*========== Start Scroll Up    ==========*/
     // Show And Hide Buttom Back To Top

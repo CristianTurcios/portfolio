@@ -48,9 +48,9 @@ export class DataService {
     {
       image: '../../../assets/images/projects/innovationTC/cover.png',
       title: 'Cofinter App',
-      description: 'Mobile Development',
+      description: 'Web Development',
       category: 'web',
-      project: 'cofinter',
+      project: 'innovationTC',
       link: '',
       tags: ['Angular', 'REST API', 'HTML', 'SASS', 'PHP', 'Laravel', 'SQL Server']
     },
@@ -98,7 +98,7 @@ export class DataService {
           { image: '../../../assets/images/projects/onecampus/9.png' },
           { image: '../../../assets/images/projects/onecampus/10.png' },
         ],
-        title: 'onecampus',
+        project: 'onecampus',
       },
       {
         images: [
@@ -115,7 +115,7 @@ export class DataService {
           { image: '../../../assets/images/projects/onefaculty/11.png' },
           { image: '../../../assets/images/projects/onefaculty/12.png' },
         ],
-        title: 'onefaculty',
+        project: 'onefaculty',
       },
       {
         images: [
@@ -124,7 +124,7 @@ export class DataService {
           { image: '../../../assets/images/projects/walden/3.png' },
           { image: '../../../assets/images/projects/walden/4.png' },
         ],
-        title: 'walden',
+        project: 'walden',
       },
       {
         images: [
@@ -133,7 +133,7 @@ export class DataService {
           { image: '../../../assets/images/projects/walden/3.png' },
           { image: '../../../assets/images/projects/walden/4.png' },
         ],
-        title: 'mgsite',
+        project: 'mgsite',
       },
       {
         images: [
@@ -141,7 +141,7 @@ export class DataService {
           { image: '../../../assets/images/projects/charlotte/2.png' },
           { image: '../../../assets/images/projects/charlotte/3.png' },
         ],
-        title: 'innovationTC',
+        project: 'innovationTC',
       },
       {
         images: [
@@ -149,7 +149,7 @@ export class DataService {
           { image: '../../../assets/images/projects/charlotte/2.png' },
           { image: '../../../assets/images/projects/charlotte/3.png' },
         ],
-        title: 'charlotte',
+        project: 'charlotte',
       },
       {
         images: [
@@ -158,14 +158,14 @@ export class DataService {
           { image: '../../../assets/images/projects/arturo/3.png' },
           { image: '../../../assets/images/projects/arturo/4.png' },
         ],
-        title: 'arturo',
+        project: 'arturo',
       }, {
         images: [
           { image: '../../../assets/images/projects/allan/1.png' },
           { image: '../../../assets/images/projects/allan/2.png' },
           { image: '../../../assets/images/projects/allan/3.png' },
         ],
-        title: 'allan',
+        project: 'allan',
       },
     ];
   }
