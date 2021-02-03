@@ -5,6 +5,7 @@ export interface IVisibleProjects {
     category: string;
     project: string;
     link: string;
+    public: boolean;
     tags: Array<string>;
 }
 
