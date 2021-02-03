@@ -54,7 +54,7 @@ export class CertificationsComponent implements OnInit {
     return [{
       title: 'SAFe Product Owner',
       image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-d6486.appspot.com/o/certifications%2FSAFe5-POPMpx.png?alt=media&token=59900e11-c356-46c8-a320-dc0d0806254a',
-      link: 'https://www.youracclaim.com/earner/earned/badge/16bf07c3-4cdc-40c6-b845-5cc71f5c6e1c',
+      link: 'https://www.youracclaim.com/badges/16bf07c3-4cdc-40c6-b845-5cc71f5c6e1c',
     },
     {
       title: 'Udemy Angular Course',
