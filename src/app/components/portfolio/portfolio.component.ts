@@ -14,14 +14,12 @@ export class PortfolioComponent implements OnInit {
   visibleImages: Array<IVisibleProjects> = [];
   projects: Array<any> = [];
 
-  imageIndex = 0;
   limit = 6;
   total!: number;
   offset!: number;
   splitArray: Array<any> = [];
   showButton!: boolean;
   filteredProjects!: Array<IVisibleProjects>;
-
 
   constructor(
     private dataService: DataService
@@ -36,7 +34,6 @@ export class PortfolioComponent implements OnInit {
 
   setProject(project: string): void {
     this.currentProject = this.projects.findIndex((element: any) => element.project === project);
-    this.imageIndex = 0;
     this.showFlag = true;
   }
 
@@ -82,5 +79,6 @@ export class PortfolioComponent implements OnInit {
   closeEventHandler(): void {
     this.showFlag = false;
     this.currentProject = -1;
+    document.body.style.overflow = 'visible';
   }
 }

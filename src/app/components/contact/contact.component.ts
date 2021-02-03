@@ -34,7 +34,6 @@ export class ContactComponent implements OnInit {
 
   onSubmit(): void {
     this.submitted = true;
-    console.log(this.contactForm.value.name);
     if (this.contactForm.valid) {
       const data = {
         name: this.contactForm.value.name,
@@ -43,7 +42,6 @@ export class ContactComponent implements OnInit {
         description: this.contactForm.value.description,
       };
 
-      console.log('data', data);
       this.submitted = false;
       this.success = true;
       this.contactForm.reset();

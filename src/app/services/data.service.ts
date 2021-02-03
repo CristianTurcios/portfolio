@@ -49,7 +49,9 @@ export class DataService {
       category: 'web',
       project: 'onecampus',
       link: 'https://onecampus.laureate.net/',
-      tags: ['Angular', 'Python', 'NodeJS', 'Firebase', 'Firestore', 'Flask', 'GCP']
+      tags: [
+        'Angular', 'Python', 'NodeJS', 'Firebase', 'Firestore', 'Flask', 'ESLint', 'REST Api', 'GCP',
+        'Google Functions', 'TypeScript', 'BigQuery', 'Google Analytics', 'CouchDB']
     },
     {
       image: '../../../assets/images/projects/onefaculty/cover.png',
@@ -58,7 +60,9 @@ export class DataService {
       category: 'web',
       project: 'onefaculty',
       link: 'https://onefaculty.laureate.net/',
-      tags: ['Angular', 'Python', 'NodeJS', 'Firebase', 'Firestore', 'Flask', 'GCP']
+      tags: [
+        'Angular', 'Python', 'NodeJS', 'Firebase', 'Firestore', 'Flask', 'ESLint', 'REST Api',
+        'Google Functions', 'TypeScript', 'BigQuery', 'Google Analytics', 'CouchDB']
     },
     {
       image: '../../../assets/images/projects/walden/cover.png',
@@ -67,7 +71,10 @@ export class DataService {
       category: 'web',
       project: 'walden',
       link: 'https://www.waldenu.edu/',
-      tags: ['React', 'NodeJS', 'Express', 'GraphQL', 'cosmosDB', 'Microsoft Azure']
+      tags: [
+        'AngularJS', 'React', 'React Hooks', 'NodeJS', 'Express', 'GraphQL', 'cosmosDB', 'Microsoft Azure', 'TypeORM',
+        'TypeScript', 'Azure Functions', 'SQL Server'
+      ]
     },
     {
       image: '../../../assets/images/projects/mgsite/cover.png',
@@ -76,7 +83,10 @@ export class DataService {
       category: 'web',
       project: 'mgsite',
       link: 'https://www.waldenu.edu/',
-      tags: ['React', 'NodeJS', 'NestJS', 'GraphQL', 'MongoDB', 'Docker', 'AWS']
+      tags: [
+        'React', 'React Hooks', 'NodeJS', 'NestJS', 'GraphQL', 'MongoDB', 'Docker', 'AWS', 'TypeScript',
+        'ESLint', 'REST Api', 'EC2', 'S3', 'Mongoose', 'TypeORM', 'PostgreSQL'
+      ]
     },
     {
       image: '../../../assets/images/projects/innovationTC/cover.png',
@@ -85,7 +95,7 @@ export class DataService {
       category: 'web',
       project: 'innovationTC',
       link: '',
-      tags: ['Angular', 'REST API', 'HTML', 'SASS', 'PHP', 'Laravel', 'SQL Server']
+      tags: ['Angular', 'REST API', 'SASS', 'PHP', 'Laravel', 'SQL Server']
     },
     {
       image: '../../../assets/images/projects/charlotte/cover.png',
@@ -94,7 +104,7 @@ export class DataService {
       category: 'chatbot',
       project: 'charlotte',
       link: '',
-      tags: ['Avaamo', 'JavaScript', 'REST API', 'cosmosDB']
+      tags: ['Avaamo', 'JavaScript', 'REST API', 'cosmosDB', 'Mongoose']
     },
     {
       image: '../../../assets/images/projects/arturo/cover.png',
@@ -103,7 +113,7 @@ export class DataService {
       category: 'chatbot',
       project: 'arturo',
       link: '',
-      tags: ['Avaamo', 'JavaScript', 'REST API', 'cosmosDB']
+      tags: ['Avaamo', 'JavaScript', 'REST API', 'cosmosDB', 'Mongoose']
     },
     {
       image: '../../../assets/images/projects/allan/cover.png',
@@ -112,7 +122,7 @@ export class DataService {
       category: 'chatbot',
       project: 'allan',
       link: '',
-      tags: ['Avaamo', 'JavaScript', 'REST API', 'cosmosDB']
+      tags: ['Avaamo', 'JavaScript', 'REST API', 'cosmosDB', 'Mongoose']
     }];
   }
 
@@ -161,10 +171,12 @@ export class DataService {
       },
       {
         images: [
-          { image: '../../../assets/images/projects/walden/1.png' },
-          { image: '../../../assets/images/projects/walden/2.png' },
-          { image: '../../../assets/images/projects/walden/3.png' },
-          { image: '../../../assets/images/projects/walden/4.png' },
+          { image: '../../../assets/images/projects/mgsite/1.png' },
+          { image: '../../../assets/images/projects/mgsite/2.png' },
+          { image: '../../../assets/images/projects/mgsite/3.png' },
+          { image: '../../../assets/images/projects/mgsite/4.png' },
+          { image: '../../../assets/images/projects/mgsite/5.png' },
+          { image: '../../../assets/images/projects/mgsite/6.png' },
         ],
         project: 'mgsite',
       },
