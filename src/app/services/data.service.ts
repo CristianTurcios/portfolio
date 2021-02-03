@@ -132,6 +132,20 @@ export class DataService {
       link: '',
       public: false,
       tags: ['Avaamo', 'JavaScript', 'REST API', 'cosmosDB', 'Mongoose']
+    },
+    {
+      image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-d6486.appspot.com/o/projects%2FsumadiChatbot%2Fcover.png?alt=media&token=61095987-aaf1-4058-a4cf-d29c8bf77d12',
+      title: 'Sumadi Chatbot',
+      description: 'Chatbot Development',
+      category: 'chatbot',
+      project: 'sumadiChatbot',
+      link: '',
+      public: false,
+      tags: [
+        'Nestjs', 'Angular', 'Angular Elements', 'Mongo', 'Mongoose', 'PostgreSQL', 'TypeORM', 'TypeScript',
+        'ESLint', 'React', 'React Hooks', 'AWS', 'DialogFlow', 'Google Cloud Functions', 'GraphQL', 'Zendesk Api',
+        'Socket.io'
+      ]
     }];
   }
 
@@ -222,6 +236,19 @@ export class DataService {
           { image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-d6486.appspot.com/o/projects%2Fallan%2F3.png?alt=media&token=6707d256-858b-4a85-aec7-7b901663a1f5' },
         ],
         project: 'allan',
+      },
+      {
+        images: [
+          { image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-d6486.appspot.com/o/projects%2FsumadiChatbot%2F6.png?alt=media&token=265e8a11-8e4f-4ed4-8743-181f4e62f246' },
+          { image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-d6486.appspot.com/o/projects%2FsumadiChatbot%2F1.png?alt=media&token=8a04a9eb-b488-4fce-a80e-c8f04162c652' },
+          { image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-d6486.appspot.com/o/projects%2FsumadiChatbot%2F2.png?alt=media&token=a3cffdca-4099-4ad3-baff-e9f239fbbe82' },
+          { image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-d6486.appspot.com/o/projects%2FsumadiChatbot%2F3.png?alt=media&token=39a105e2-2c91-480d-a527-afdbe93e2341' },
+          { image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-d6486.appspot.com/o/projects%2FsumadiChatbot%2F4.png?alt=media&token=9d94f85c-46be-45ac-b96e-c7bd1e1a308d' },
+          { image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-d6486.appspot.com/o/projects%2FsumadiChatbot%2F7.png?alt=media&token=a106f409-7590-435f-bf21-60bc1944e6fd' },
+          { image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-d6486.appspot.com/o/projects%2FsumadiChatbot%2F8.png?alt=media&token=51a1ff1a-994f-4e0b-9ab3-3a52b37ddde2' },
+
+        ],
+        project: 'sumadiChatbot',
       },
     ];
   }
