@@ -41,7 +41,7 @@ export class DataService {
       title: 'Sumadi - Management Site',
       description: 'Web Development',
       category: 'web',
-      project: 'managementSite',
+      project: 'mgsite',
       link: 'https://www.waldenu.edu/',
       tags: ['React', 'NodeJS', 'NestJS', 'GraphQL', 'MongoDB', 'Docker', 'AWS']
     },
@@ -119,11 +119,53 @@ export class DataService {
       },
       {
         images: [
+          { image: '../../../assets/images/projects/walden/1.png' },
+          { image: '../../../assets/images/projects/walden/2.png' },
+          { image: '../../../assets/images/projects/walden/3.png' },
+          { image: '../../../assets/images/projects/walden/4.png' },
+        ],
+        title: 'walden',
+      },
+      {
+        images: [
+          { image: '../../../assets/images/projects/walden/1.png' },
+          { image: '../../../assets/images/projects/walden/2.png' },
+          { image: '../../../assets/images/projects/walden/3.png' },
+          { image: '../../../assets/images/projects/walden/4.png' },
+        ],
+        title: 'mgsite',
+      },
+      {
+        images: [
+          { image: '../../../assets/images/projects/charlotte/1.png' },
+          { image: '../../../assets/images/projects/charlotte/2.png' },
+          { image: '../../../assets/images/projects/charlotte/3.png' },
+        ],
+        title: 'innovationTC',
+      },
+      {
+        images: [
           { image: '../../../assets/images/projects/charlotte/1.png' },
           { image: '../../../assets/images/projects/charlotte/2.png' },
           { image: '../../../assets/images/projects/charlotte/3.png' },
         ],
         title: 'charlotte',
+      },
+      {
+        images: [
+          { image: '../../../assets/images/projects/arturo/1.png' },
+          { image: '../../../assets/images/projects/arturo/2.png' },
+          { image: '../../../assets/images/projects/arturo/3.png' },
+          { image: '../../../assets/images/projects/arturo/4.png' },
+        ],
+        title: 'arturo',
+      }, {
+        images: [
+          { image: '../../../assets/images/projects/allan/1.png' },
+          { image: '../../../assets/images/projects/allan/2.png' },
+          { image: '../../../assets/images/projects/allan/3.png' },
+        ],
+        title: 'allan',
       },
     ];
   }
