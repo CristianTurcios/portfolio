@@ -22,6 +22,8 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { StatisticsComponent } from './components/statistics/statistics.component';
 import { TestimonialsComponent } from './components/testimonials/testimonials.component';
 import { CertificationsComponent } from './components/certifications/certifications.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,6 +49,7 @@ import { CertificationsComponent } from './components/certifications/certificati
     ReactiveFormsModule,
     BrowserAnimationsModule,
     NgImageFullscreenViewModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
   providers: [],
   bootstrap: [AppComponent]
