@@ -252,4 +252,11 @@ export class DataService {
       },
     ];
   }
+
+  sendContactMessage(name: string, message: string): void {
+    const phoneNumber = '50497335408';
+    const url = `https://api.whatsapp.com/send/?phone=${phoneNumber}&text=Hi Cristian, My name is ${name} and ${message}&app_absent=0`;
+    window.open(url, '_blank');
+  }
 }
+

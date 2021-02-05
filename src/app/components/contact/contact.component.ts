@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { DataService } from 'src/app/services/data.service';
 
 @Component({
   selector: 'app-contact',
@@ -13,17 +14,12 @@ export class ContactComponent implements OnInit {
 
   constructor(
     private formBuilder: FormBuilder,
+    private dataService: DataService,
   ) {
     this.success = false;
     this.submitted = false;
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
-      email: ['', [
-        Validators.required,
-        Validators.email
-      ]
-      ],
-      subject: ['', Validators.required],
       description: ['', Validators.required],
     });
    }
@@ -37,8 +33,6 @@ export class ContactComponent implements OnInit {
     if (this.contactForm.valid) {
       const data = {
         name: this.contactForm.value.name,
-        email: this.contactForm.value.email,
-        subject: this.contactForm.value.subject,
         description: this.contactForm.value.description,
       };
 
@@ -46,9 +40,11 @@ export class ContactComponent implements OnInit {
       this.success = true;
       this.contactForm.reset();
 
+      this.dataService.sendContactMessage(data.name, data.description);
       setTimeout(() => {
         this.success = false;
       }, 3000);
+
     }
   }
 

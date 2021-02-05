@@ -3,7 +3,6 @@
   <div class="container">
     <div class="row">
       <div class="col-md-8 offset-md-2">
-        <!-- Title Of Section Center -->
         <div class="section-title text-center">
           <h2>Get In Touch</h2>
           <h3>Contact <span>Me</span></h3>
@@ -30,7 +29,6 @@
                 <span><i class="fa fa-envelope"></i></span>
                 <h6>Email</h6>
               </div>
-
               <div class="info-cont">
                 <p><a href="mailto:cturcioscolindres01@gmail.com">cturcioscolindres01@gmail.com</a></p>
               </div>
@@ -56,7 +54,7 @@
       <div class="offset-lg-1 col-lg-10">
         <form class="form" [formGroup]="contactForm" action="" (ngSubmit)="onSubmit()">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12">
               <div class="form-group">
                 <input
                   type="text"
@@ -73,41 +71,6 @@
                 </span>
               </div>
             </div>
-
-            <div class="col-md-6">
-              <div class="form-group">
-                <input
-                  type="Email" 
-                  placeholder="John.Doe@company.com"
-                  name="email"
-                  formControlName="email"
-                  [ngClass]="{'input--error': form.email.errors && (form.email.dirty || form.email.touched || submitted)}">
-                <span class="error-text"
-                  *ngIf="form.email.errors && (form.email.dirty || form.email.touched || submitted)"
-                >
-                  * Campo requerido o invalido
-                </span>
-              </div>
-            </div>
-
-            <div class="col-md-12">
-              <div class="form-group">
-                <input
-                  type="text"
-                  placeholder="Subject"
-                  name="subject"
-                  formControlName="subject"
-                  [ngClass]="{'input--error': form.subject.errors && (form.subject.dirty || form.subject.touched || submitted)}"
-                >
-                <span
-                  class="error-text"
-                  *ngIf="form.subject.errors && (form.subject.dirty || form.subject.touched || submitted)"
-                >
-                  * Campo requerido
-                </span>
-              </div>
-            </div>
-
             <div class="col-md-12">
               <div class="form-group">
                 <textarea
@@ -126,8 +89,8 @@
 
           <!-- Button Send Message  -->
           <button class="btn-one" type="submit">
-            <i class="fas fa-paper-plane"></i>
-            <span>Send Message</span>
+            <span>Send Message via Whatsapp </span>
+            <i class="fab fa-whatsapp"></i>
           </button>
             <div class="text-center success-text" *ngIf="success">Mensaje enviado exitosamente</div>
             <div class="text-center error-text" *ngIf="!success && submitted">Error al enviar el mensaje!</div>
