@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1613255595028,
+  "timestamp": 1613255976733,
   "index": "/portfolio/index.html",
   "assetGroups": [
     {
@@ -30,7 +30,6 @@
       },
       "urls": [
         "/portfolio/assets/css/all.css",
-        "/portfolio/assets/css/bootstrap.min.css",
         "/portfolio/assets/css/dark-theme.css",
         "/portfolio/assets/css/fonts/linea-basic-10.woff",
         "/portfolio/assets/css/main.css",
@@ -140,7 +139,6 @@
   ],
   "hashTable": {
     "/portfolio/assets/css/all.css": "09705c19d9653fdee7cae8e6e65ecf1c50d9bf1e",
-    "/portfolio/assets/css/bootstrap.min.css": "895125a4522a3b10ee7ada06ee6503587cbf95c5",
     "/portfolio/assets/css/dark-theme.css": "bce1ee57ef7f83eb99bb04a8f92deb38299cf7f7",
     "/portfolio/assets/css/fonts/linea-basic-10.woff": "c46bdda0a3a2e2d2d338f4c20c4ab0bdb67927dc",
     "/portfolio/assets/css/main.css": "24f4fa587c3eaa9b3c156c7d57ac483e854c66cd",
@@ -229,7 +227,7 @@
     "/portfolio/assets/webfonts/fa-solid-900.woff": "28b3d94d115d3e80c3ffd86239fd84638c88d463",
     "/portfolio/assets/webfonts/fa-solid-900.woff2": "28a1f2fadc35c5343e0280389fe7955e3d1be607",
     "/portfolio/favicon.ico": "1f84a8b2a8a3a43d5e7fb9ac05e5fa1b540e1ff6",
-    "/portfolio/index.html": "419d3f95bba6b5a5df726cbda1689d0d5f7e03bf",
+    "/portfolio/index.html": "06814ee3274c17250cc0559307e5df9c3aeb9c22",
     "/portfolio/main.dd513749862899c8f128.js": "f7fc3cbce953cf4c6dac2bac8592249d1c5e8b8e",
     "/portfolio/manifest.webmanifest": "e14484a4f652e2f158ec8045c44ef1b6d61e9f2d",
     "/portfolio/owl.video.play.7f01b07148f205f6e825.png": "c0d64356ec2758cb280d183b4829c923e5ff61e5",
