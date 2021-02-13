@@ -1,14 +1,14 @@
-import { Component, OnInit, AfterContentInit, Inject } from '@angular/core';
-// import { DOCUMENT } from '@angular/common';
-
+import { Component, OnInit, AfterContentInit } from '@angular/core';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit, AfterContentInit {
+  isCollapsed!: boolean;
 
-  constructor() { }
+  constructor(
+  ) { }
 
   ngOnInit(): void {
   }
@@ -16,7 +16,6 @@ export class NavbarComponent implements OnInit, AfterContentInit {
   goToUrl(url: string): void {
     window.open(url, '_blank');
   }
-
 
   ngAfterContentInit(): void {
     (() => {
@@ -32,5 +31,4 @@ export class NavbarComponent implements OnInit, AfterContentInit {
       });
     })();
   }
-
 }

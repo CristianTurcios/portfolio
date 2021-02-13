@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { ReactiveFormsModule } from '@angular/forms';
+import { environment } from '../environments/environment';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { NgImageFullscreenViewModule } from 'ng-image-fullscreen-view';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -22,8 +25,6 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { StatisticsComponent } from './components/statistics/statistics.component';
 import { TestimonialsComponent } from './components/testimonials/testimonials.component';
 import { CertificationsComponent } from './components/certifications/certifications.component';
-import { ServiceWorkerModule } from '@angular/service-worker';
-import { environment } from '../environments/environment';
 @NgModule({
   declarations: [
     AppComponent,
@@ -48,6 +49,7 @@ import { environment } from '../environments/environment';
     CarouselModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
+    ScrollToModule.forRoot(),
     NgImageFullscreenViewModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
