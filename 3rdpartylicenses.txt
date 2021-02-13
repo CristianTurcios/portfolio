@@ -19,6 +19,9 @@ MIT
 @angular/service-worker
 MIT
 
+@nicky-lenaers/ngx-scroll-to
+MIT
+
 animate.css
 MIT
 The MIT License (MIT)
