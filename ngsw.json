@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1613256631732,
+  "timestamp": 1613257230151,
   "index": "/portfolio/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/portfolio/favicon.ico",
         "/portfolio/index.html",
-        "/portfolio/main.dd513749862899c8f128.js",
+        "/portfolio/main.257f06191ef1e115f7ee.js",
         "/portfolio/manifest.webmanifest",
         "/portfolio/polyfills.8c151b8375e767ff858f.js",
         "/portfolio/runtime.0e49e2b53282f40c8925.js",
@@ -141,7 +141,7 @@
     "/portfolio/assets/css/all.css": "75ff72ee1206f702ef8f39186c44b28e87e826d3",
     "/portfolio/assets/css/dark-theme.css": "409c5137f3515af0dd5f0ceed35cc10e3dab6b43",
     "/portfolio/assets/css/fonts/linea-basic-10.woff": "c46bdda0a3a2e2d2d338f4c20c4ab0bdb67927dc",
-    "/portfolio/assets/css/main.css": "fe0ee88afb74b707c799a76c15314ce26673cad5",
+    "/portfolio/assets/css/main.css": "2acaf3d76daa0fb7ab295369b990cd25313af265",
     "/portfolio/assets/css/responsive.css": "f12af8d13b3ffc7626b9d53aa0cacda9384d8c2e",
     "/portfolio/assets/icons/icon-128x128.png": "9d993808f9de6ac8b778a824b6bb5c8314bf7951",
     "/portfolio/assets/icons/icon-144x144.png": "9f08b8a56620f07c2e7428c6382d430db6935fde",
@@ -227,8 +227,8 @@
     "/portfolio/assets/webfonts/fa-solid-900.woff": "28b3d94d115d3e80c3ffd86239fd84638c88d463",
     "/portfolio/assets/webfonts/fa-solid-900.woff2": "28a1f2fadc35c5343e0280389fe7955e3d1be607",
     "/portfolio/favicon.ico": "1f84a8b2a8a3a43d5e7fb9ac05e5fa1b540e1ff6",
-    "/portfolio/index.html": "06814ee3274c17250cc0559307e5df9c3aeb9c22",
-    "/portfolio/main.dd513749862899c8f128.js": "f7fc3cbce953cf4c6dac2bac8592249d1c5e8b8e",
+    "/portfolio/index.html": "6acd2ef55c9a841e2cbf13bb0d3043977bc1e277",
+    "/portfolio/main.257f06191ef1e115f7ee.js": "759f43b12d8462c78ca6bb4d4e5290007217d3ca",
     "/portfolio/manifest.webmanifest": "e14484a4f652e2f158ec8045c44ef1b6d61e9f2d",
     "/portfolio/owl.video.play.7f01b07148f205f6e825.png": "c0d64356ec2758cb280d183b4829c923e5ff61e5",
     "/portfolio/polyfills.8c151b8375e767ff858f.js": "763cd3b34dfa4600ebb9d9588ec7116988e98920",
