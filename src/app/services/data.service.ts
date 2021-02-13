@@ -44,7 +44,7 @@ export class DataService {
   getVisibleImages(): Array<IVisibleProjects> {
     return [
     {
-      image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-d6486.appspot.com/o/projects%2Fonecampus%2Fcover.png?alt=media&token=cdfddb0d-fe2d-4e36-9783-f0cb1b935678',
+        image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-d6486.appspot.com/o/projects%2Fonecampus%2Fcover.webp?alt=media&token=8ec3944d-10f1-455f-ab2c-5c80cb3c82e2',
       title: 'OneCampus by Laureate',
       description: 'Web Development',
       category: 'web',
@@ -56,7 +56,7 @@ export class DataService {
         'Google Functions', 'TypeScript', 'BigQuery', 'Google Analytics', 'CouchDB']
     },
     {
-      image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-d6486.appspot.com/o/projects%2Fonefaculty%2Fcover.png?alt=media&token=cebe5018-0dad-40c3-9835-c1b9c89b0c93',
+      image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-d6486.appspot.com/o/projects%2Fonefaculty%2Fcover.webp?alt=media&token=3deb98f9-1b89-4f63-800f-4673b611067c',
       title: 'OneFaculty by Laureate',
       description: 'Web Development',
       category: 'web',
@@ -68,7 +68,7 @@ export class DataService {
         'Google Functions', 'TypeScript', 'BigQuery', 'Google Analytics', 'CouchDB']
     },
     {
-      image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-d6486.appspot.com/o/projects%2Fwalden%2Fcover.png?alt=media&token=4195eb5e-c781-439e-82d2-6acdf9ad9135',
+      image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-d6486.appspot.com/o/projects%2Fwalden%2Fcover.webp?alt=media&token=1cb7eeef-9b0c-4bf5-8302-867a97b14d9c',
       title: 'Walden University Portal',
       description: 'Web Development',
       category: 'web',
@@ -81,7 +81,7 @@ export class DataService {
       ]
     },
     {
-      image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-d6486.appspot.com/o/projects%2Fmgsite%2Fcover.png?alt=media&token=50dd3b68-40ea-4277-8427-303f50876919',
+      image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-d6486.appspot.com/o/projects%2Fmgsite%2Fcover.webp?alt=media&token=c8d62d3e-83a6-4595-b5c9-83d79b8883f5',
       title: 'Sumadi - Management Site',
       description: 'Web Development',
       category: 'web',
@@ -94,7 +94,7 @@ export class DataService {
       ]
     },
     {
-      image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-d6486.appspot.com/o/projects%2FinnovationTC%2Fcover.png?alt=media&token=3dfa9948-bc6f-4e75-bcfe-2914caa570d0',
+      image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-d6486.appspot.com/o/projects%2FinnovationTC%2Fcover.webp?alt=media&token=bf0e3839-ee15-4f66-b3be-c108d9c5c1d5',
       title: 'InnovationTC Website',
       description: 'Web Development',
       category: 'web',
@@ -104,7 +104,7 @@ export class DataService {
       tags: ['Angular', 'REST API', 'SASS', 'PHP', 'Laravel', 'SQL Server']
     },
     {
-      image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-d6486.appspot.com/o/projects%2Fcharlotte%2Fcover.png?alt=media&token=be07a1c0-0c8a-4f7f-b27f-36f7a9a5a26d',
+      image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-d6486.appspot.com/o/projects%2Fcharlotte%2Fcover.webp?alt=media&token=e0a716ce-70b5-4003-9889-a8b65d58d484',
       title: 'Charlotte Chatbot',
       description: 'Chatbot Development',
       category: 'chatbot',
@@ -114,7 +114,7 @@ export class DataService {
       tags: ['Avaamo', 'JavaScript', 'REST API', 'cosmosDB', 'Mongoose']
     },
     {
-      image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-d6486.appspot.com/o/projects%2Farturo%2Fcover.png?alt=media&token=dd9da594-a58c-4cb9-84b9-b12616b1b383',
+      image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-d6486.appspot.com/o/projects%2Farturo%2Fcover.webp?alt=media&token=83d02bbf-7f7a-4c9f-b0ce-708051230f96',
       title: 'Arturo Chatbot',
       description: 'Chatbot Development',
       category: 'chatbot',
@@ -124,7 +124,7 @@ export class DataService {
       tags: ['Avaamo', 'JavaScript', 'REST API', 'cosmosDB', 'Mongoose']
     },
     {
-      image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-d6486.appspot.com/o/projects%2Fallan%2Fcover.png?alt=media&token=3512dcd2-e716-4565-9973-64e52eeab634',
+      image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-d6486.appspot.com/o/projects%2Fallan%2Fcover.webp?alt=media&token=7ff8d411-2626-4c93-8760-89ac011423bc',
       title: 'Allan Chatbot',
       description: 'Chatbot Development',
       category: 'chatbot',
@@ -134,7 +134,7 @@ export class DataService {
       tags: ['Avaamo', 'JavaScript', 'REST API', 'cosmosDB', 'Mongoose']
     },
     {
-      image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-d6486.appspot.com/o/projects%2FsumadiChatbot%2Fcover.png?alt=media&token=61095987-aaf1-4058-a4cf-d29c8bf77d12',
+      image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-d6486.appspot.com/o/projects%2FsumadiChatbot%2Fcover.webp?alt=media&token=4bf6b482-f691-4b04-8897-6ea81d17f67c',
       title: 'Sumadi Chatbot',
       description: 'Chatbot Development',
       category: 'chatbot',
@@ -153,9 +153,9 @@ export class DataService {
     return [
       {
         images: [
-          { image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-d6486.appspot.com/o/projects%2Fonecampus%2F1.png?alt=media&token=e1d603f4-7890-4c0d-984a-8e3c2b43d623' },
-          { image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-d6486.appspot.com/o/projects%2Fonecampus%2F2.png?alt=media&token=fdc7792c-ffb8-41a5-b2d2-ac5bd0894e1c' },
-          { image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-d6486.appspot.com/o/projects%2Fonecampus%2F3.png?alt=media&token=c8c5f071-2fb8-4b92-94f6-e97e8436a6b0' },
+          { image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-d6486.appspot.com/o/projects%2Fonecampus%2F1.webp?alt=media&token=8f206f71-82fb-4f0d-a87e-d1472e7b32c6' },
+          { image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-d6486.appspot.com/o/projects%2Fonecampus%2F2.webp?alt=media&token=43dfef7f-43a6-45a2-9b03-5252a483a401' },
+          { image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-d6486.appspot.com/o/projects%2Fonecampus%2F3.webp?alt=media&token=97d2e1f1-5635-4ef0-90ba-58b01f66a323' },
           { image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-d6486.appspot.com/o/projects%2Fonecampus%2F4.png?alt=media&token=e6b3218f-3976-4d27-b14d-bf26b655f503' },
           { image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-d6486.appspot.com/o/projects%2Fonecampus%2F5.png?alt=media&token=7feea7a3-7539-4bb6-a286-05608be41760' },
           { image: 'https://firebasestorage.googleapis.com/v0/b/portfolio-d6486.appspot.com/o/projects%2Fonecampus%2F6.png?alt=media&token=7508dd48-cd2f-44e4-9496-796fb743f10a' },
