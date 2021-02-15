@@ -24,7 +24,7 @@
     "@angular/service-worker": "~11.0.3",
     "@nicky-lenaers/ngx-scroll-to": "^9.0.0",
     "animate.css": "^4.1.1",
-    "bootstrap": "^4.5.3",
+    "bootstrap": "^4.6.0",
     "firebase": "^7.0 || ^8.0",
     "ng-image-fullscreen-view": "^2.0.0",
     "ngx-owl-carousel-o": "^5.0.0",
