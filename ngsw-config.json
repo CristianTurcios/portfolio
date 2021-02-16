@@ -24,12 +24,22 @@
           "/assets/**",
           "/*.(eot|svg|cur|jpg|png|webp|gif|otf|ttf|woff|woff2|ani)"
         ]
-      },
-      "urls": [
-        "https://fonts.gstatic.com/s/**",
-        "https://firebasestorage.googleapis.com/v0/b/portfolio-d6486.appspot.com/**",
-        "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-      ]
+      }
     }
+  ],
+  "dataGroups": [
+     {
+       "name": "api-performance",
+       "urls": [
+         "https://fonts.gstatic.com/s/**",
+         "https://firebasestorage.googleapis.com/v0/b/portfolio-d6486.appspot.com/**",
+         "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+       ],
+       "cacheConfig": {
+         "strategy": "performance",
+         "maxSize": 100,
+         "maxAge": "3d"
+       }
+     }
   ]
 }
