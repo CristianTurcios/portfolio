@@ -1,6 +1,8 @@
 <nav class="navbar navbar-expand-lg dark fixed-top navbar-light" id="navbar">
   <div class="container">
-    <a href="#home" class="navbar-brand">Cristian</a>
+    <a href="#home" class="navbar-brand">
+      Cristian T.
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navtoggler"
       aria-controls="navtoggler" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -27,14 +29,30 @@
       </ul>
 
       <ul class="social-media-nav">
-        <li><a (click)="goToUrl('https://www.linkedin.com/in/cristian-turcios')"><i class="fab fa-linkedin-in"></i></a>
+        <li data-bs-toggle="tooltip" data-bs-placement="bottom" title="LinkedIn">
+          <a (click)="goToUrl('https://www.linkedin.com/in/cristian-turcios')">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
         </li>
-        <li><a (click)="goToUrl('https://github.com/CristianTurcios')"><i class="fab fa-github"></i></a></li>
-        <li><a (click)="goToUrl('https://www.behance.net/cristian-turcios')"><i class="fab fa-behance"></i></a></li>
-        <li>
+        <li data-bs-toggle="tooltip" data-bs-placement="bottom" title="Github Projects">
+          <a (click)="goToUrl('https://github.com/CristianTurcios')">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li data-bs-toggle="tooltip" data-bs-placement="bottom" title="Behance Projects">
+          <a (click)="goToUrl('https://www.behance.net/cristian-turcios')">
+            <i class="fab fa-behance"></i>
+          </a>
+        </li>
+        <li data-bs-toggle="tooltip" data-bs-placement="bottom" title="Chat via Whatsapp">
           <a
             (click)="goToUrl('https://api.whatsapp.com/send/?phone=50497335408&text=Hi Cristian, I would like to get in touch with you&app_absent=0')">
             <i class="fab fa-whatsapp"></i>
+          </a>
+        </li>
+        <li data-bs-toggle="tooltip" data-bs-placement="bottom" title="Download Resume">
+          <a (click)="goToUrl('https://drive.google.com/file/d/1Oc1SI2mF_D4Wbcst3T7H3ReHuWNuU6T6/view')">
+            <i class="fas fa-file-alt"></i>
           </a>
         </li>
       </ul>
