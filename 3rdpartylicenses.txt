@@ -22,6 +22,9 @@ MIT
 @nicky-lenaers/ngx-scroll-to
 MIT
 
+angular-google-tag-manager
+MIT
+
 animate.css
 MIT
 The MIT License (MIT)
