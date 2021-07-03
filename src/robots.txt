@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cristianturcios.github.io/portfolio/sitemap.xml
