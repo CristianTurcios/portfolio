@@ -11,6 +11,11 @@ textarea {
   color: #f9f9f9
 }
 
+.text-dark {
+  color: #343a40 !important;
+  font-weight: bold;
+}
+
 .btn-one:hover {
   background: #f9f9f9;
   border: 2px solid #f9f9f9;
