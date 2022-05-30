@@ -67,7 +67,7 @@
                   class="error-text"
                   *ngIf="form.name.errors && (form.name.dirty || form.name.touched || submitted)"
                 >
-                  * Campo requerido
+                  * Required
                 </span>
               </div>
             </div>
@@ -82,7 +82,7 @@
                   class="error-text"
                   *ngIf="form.description.errors && (form.description.dirty || form.description.touched || submitted)"
                 >
-                  * Campo requerido</span>
+                  * Required</span>
               </div>
             </div>
           </div>
@@ -92,8 +92,8 @@
             <span>Send Message via Whatsapp </span>
             <i class="fab fa-whatsapp"></i>
           </button>
-            <div class="text-center success-text" *ngIf="success">Mensaje enviado exitosamente</div>
-            <div class="text-center error-text" *ngIf="!success && submitted">Error al enviar el mensaje!</div>
+            <div class="text-center success-text" *ngIf="success">Message sent successfully</div>
+            <div class="text-center error-text" *ngIf="!success && submitted">Error sending message!</div>
         </form>
       </div>
     </div>
